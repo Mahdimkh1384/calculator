@@ -1,8 +1,23 @@
 @import "tailwindcss";
 
+@theme {
+    --breakpoint-sm: 300px
+}
+
 @layer components {
-    body{
+    body {
         background-image: url('./../images/bg.jpg');
         background-size: cover;
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        /* برای IE و Edge */
+        scrollbar-width: none;
+        /* برای Firefox */
     }
 }
