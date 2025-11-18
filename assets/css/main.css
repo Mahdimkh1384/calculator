@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@layer components {
+    body{
+        background-image: url('./../images/bg.jpg');
+        background-size: cover;
+    }
+}
